@@ -7,7 +7,7 @@ export default function Button({
     type,
     children
 }: ButtonProps) {
-    const buttonStyle = "rounded-md p-2 bg-blue-300"
+    const buttonStyle = `rounded-md p-2 text-sm ${type == "primary"? "bg-green-300": "bg-yellow-400"}`; 
 
     return (
         <button className={buttonStyle}>
