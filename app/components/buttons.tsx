@@ -1,13 +1,12 @@
 interface ButtonProps {
-    type: string,
     children: React.ReactNode,
 }
 
 export default function Button({
-    type,
     children
 }: ButtonProps) {
-    const buttonStyle = `rounded-md p-2 text-sm ${type == "primary"? "bg-green-300": "bg-yellow-400"}`; 
+    const buttonStyle = `rounded-md p-2 text-sm text-white hover:border-2 border-[#d90429] hover:text-[#d90429] hover:bg-white
+     bg-[#d90429] cursor-pointer`; 
 
     return (
         <button className={buttonStyle}>
